@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Morphing Particles with Three.js</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <style>
     *, *::before, *::after {
         margin: 0;
@@ -188,15 +198,15 @@
 </script>
 
 <script type="module">
-    import * as THREE from 'three';
-    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-    import { TeapotGeometry } from 'three/addons/geometries/TeapotGeometry.js';
-    import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-    import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-    import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
-    import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
-    import { GammaCorrectionShader } from 'three/addons/shaders/GammaCorrectionShader.js';
-
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js';
+    import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/controls/OrbitControls.js';
+    import { TeapotGeometry } from 'https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/geometries/TeapotGeometry.js';
+    import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/postprocessing/EffectComposer.js';
+    import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/postprocessing/RenderPass.js';
+    import { ShaderPass } from 'https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/postprocessing/ShaderPass.js';
+    import { UnrealBloomPass } from 'https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/postprocessing/UnrealBloomPass.js';
+    import { GammaCorrectionShader } from 'https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/shaders/GammaCorrectionShader.js';
+   
     let scene, camera, renderer, controls, particleSystem, currentGeometry;
     const numParticles = 25000;
     const clock = new THREE.Clock();
@@ -580,3 +590,7 @@
         composer.render();
     }
 </script>
+<!-- partial -->
+  
+</body>
+</html>
